@@ -28,6 +28,8 @@ public class Ventana extends javax.swing.JFrame {
         jTabbedPane1 = new javax.swing.JTabbedPane();
         Inicio = new javax.swing.JPanel();
         jTextField1 = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         Segunda = new javax.swing.JPanel();
         jTextField2 = new javax.swing.JTextField();
         Tercera = new javax.swing.JPanel();
@@ -43,6 +45,10 @@ public class Ventana extends javax.swing.JFrame {
 
         jTextField1.setText("Nombre peluquería, logo o imagen y registrarse (si tiene cuenta de empleado puede acceder a reservas, y si tiene de cliente solo puede a la info)");
 
+        jLabel1.setText("jLabel1");
+
+        jLabel2.setText("jLabel2");
+
         javax.swing.GroupLayout InicioLayout = new javax.swing.GroupLayout(Inicio);
         Inicio.setLayout(InicioLayout);
         InicioLayout.setHorizontalGroup(
@@ -51,11 +57,21 @@ public class Ventana extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jTextField1)
                 .addContainerGap())
+            .addGroup(InicioLayout.createSequentialGroup()
+                .addGap(71, 71, 71)
+                .addGroup(InicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel1))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         InicioLayout.setVerticalGroup(
             InicioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(InicioLayout.createSequentialGroup()
-                .addGap(120, 120, 120)
+                .addGap(21, 21, 21)
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel2)
+                .addGap(49, 49, 49)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(127, Short.MAX_VALUE))
         );
@@ -171,7 +187,7 @@ public class Ventana extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 784, Short.MAX_VALUE)
+            .addComponent(jTabbedPane1)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -223,6 +239,8 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JPanel Segunda;
     private javax.swing.JPanel Sexta;
     private javax.swing.JPanel Tercera;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
